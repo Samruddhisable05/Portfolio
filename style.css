@@ -4,7 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     scroll-behavior: smooth;
-    font-family:"popppins";
+    font-family:"poppins",sans-serif;
 }
 :root {
    --bg-color:#080808;
@@ -29,6 +29,7 @@ body{
     background: rgba(0,0,0,0.3);
     backdrop-filter: blur(10px);
     justify-content: space-between;
+    display: flex;
     align-items: center;
     z-index: 1000;
 
@@ -57,3 +58,41 @@ span{
     background-clip: text;
     color: transparent;
 }
+.navbar a{
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    border-bottom: 3px solid var(--main-color);
+}
+.navbar a:hover{
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+
+}
+.gradient-btn{
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    background: linear-gradient(
+        270deg,
+        green 10%,
+        rgb(0, 255, 0) 100%
+    );
+letter-spacing: 1px;
+cursor: pointer;
+transition: 0.3s ease-in-out;
+color: white;
+border: none;
+text-wrap: nowrap;
+}
+.gradient-btn:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+
+
